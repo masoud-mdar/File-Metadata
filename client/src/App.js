@@ -1,7 +1,7 @@
 import React, {useState} from "react"
 import axios from "axios"
 
-const BASE_URL = "http://localhost:5000"
+const BASE_URL = "https://file-metadata-micro-s.herokuapp.com"
 
 const App = () => {
 
