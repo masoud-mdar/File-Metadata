@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url("./public/tile_background\ \(1\).png");
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 550px;
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 7px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(10px);
+}
+
+.input-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Waiting for the Sunrise";
+    letter-spacing: 0.5rem;
+    font-size: large;
+    white-space: nowrap;
+}
+
+.input-area h3 {
+    margin-top: 25px;
+    font-family: monospace;
+    font-size: large;
+}
+
+
+.input {
+    opacity: 0;
+    height: 0.1px;
+    width: 0.1px;
+    position: absolute;
+}
+
+.input-label {
+    display: block;
+    position: relative;
+    height: 50px;
+    width: 200px;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    background: linear-gradient(40deg, #9e0661, #15125f);
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.5s ease-out;
+}
+
+.input-label:hover {
+    transform: scale(1.02);
+    
+}
+
+.btn {
+    border: none;
+    border-radius: 25px;
+    padding: 10px 75px;
+    font-weight: bold;
+    font-family: "Waiting for the Sunrise";
+    letter-spacing: 0.5rem;
+    font-size: large;
+    cursor: pointer;
+}
+
+.result ul {
+    list-style: none;
+    margin-left: 25px;
+    margin-top: 25px;
+    font-family: monospace;
+    font-size: x-large;
+}
+
+.result ul li {
+    margin-top: 10px;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    color: orange;
+}
+
+h1 {
+    font-family: "Annie Use Your Telescope";
+    letter-spacing: 00.1rem;
+}
+
+.loading {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    color: #fff;
+}
